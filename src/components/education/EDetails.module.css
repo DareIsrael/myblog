@@ -1,0 +1,131 @@
+.newsDetailsPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.newsHeader {
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 2rem;
+}
+
+.headline {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.timestamp {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.02);
+}
+
+.content {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #34495e;
+  margin: 3rem 0;
+  text-align: justify;
+  white-space: pre-wrap;
+}
+
+.content p {
+  margin-bottom: 1.8rem;
+}
+
+.videoContainer {
+  margin: 3rem 0;
+  text-align: center;
+  background-color: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  max-height: 500px;
+  background-color: #000;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #636e72;
+  margin: 4rem 0;
+  padding: 2rem;
+}
+
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e74c3c;
+  margin: 4rem 0;
+  padding: 2rem;
+  background-color: #fdf2f2;
+  border-radius: 8px;
+  border: 1px solid #f5c6cb;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .newsDetailsPage {
+    padding: 1rem;
+  }
+  
+  .headline {
+    font-size: 2rem;
+  }
+  
+  .content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+  
+  .image {
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headline {
+    font-size: 1.7rem;
+  }
+  
+  .content {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .image {
+    max-height: 250px;
+    border-radius: 8px;
+  }
+}

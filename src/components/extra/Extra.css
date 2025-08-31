@@ -1,0 +1,15 @@
+.extra {
+  padding: 2rem;
+}
+
+.extra h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.extra p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}

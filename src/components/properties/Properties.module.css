@@ -1,0 +1,70 @@
+.sportContainer {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.sportTitle {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.sportGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* 2 items per row */
+  gap: 1.5rem;
+}
+
+.newsItem {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+  display: flex;
+}
+
+.newsItem:hover {
+  transform: scale(1.02);
+}
+
+.newsItemImg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.newsDetails {
+  margin-left: 1rem;
+}
+
+.newsHeadline {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.newsTimestamp {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.loadMore {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loadMore:hover {
+  background-color: #555;
+}

@@ -1,0 +1,21 @@
+.footer {
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: #f0a500;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
