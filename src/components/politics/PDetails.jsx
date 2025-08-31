@@ -4,7 +4,7 @@ import { db } from "../../firebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
 import styles from "./PDetails.module.css"; // Updated to CSS Module
 
-const PDetails = () => {
+const PoDetails = () => {
   const { id } = useParams();
   const [news, setNews] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -90,4 +90,4 @@ const PDetails = () => {
   );
 };
 
-export default PDetails;
+export default PoDetails;

@@ -17,6 +17,11 @@ import Education from './components/education/Education';
 import EDetails from './components/education/EDetails';
 import Properties from './components/properties/Properties';
 import PDetails from './components/properties/PDetails';
+import Contact from './components/contact/Contact';
+import PrivacyPolicy from './components/privacypolicy/PrivacyPolicy';
+import About from './components/about/About';
+import PoDetails from './components/politics/PDetails';
+
 
 const App = () => {
   return (
@@ -34,6 +39,10 @@ const App = () => {
         <Route path="/daily-tips" element={<DailyTips />} />
         <Route path="/religion" element={<Religion />} />
         <Route path="/politics" element={<Politics />} />
+        <Route path="/politics/:id" element={<PoDetails />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/news/:id" element={<NewsDetails />} />
         <Route path="/entertainment/:id" element={<EntertainmentDetails />} />
         <Route path="/education/:id" element={<EDetails />} />

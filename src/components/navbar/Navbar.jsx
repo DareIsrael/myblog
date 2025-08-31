@@ -50,8 +50,8 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarLogo}>
-      <span>Gist</span>
-      <span>plus</span>
+      <span>Info</span>
+      <span>CONNECT</span>
       </div>
       
       <div className={`${styles.navbarLinks} ${isOpen ? styles.open : ''}`}>
