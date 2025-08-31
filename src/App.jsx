@@ -20,7 +20,7 @@ import PDetails from './components/properties/PDetails';
 
 const App = () => {
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -38,8 +38,8 @@ const App = () => {
         <Route path="/entertainment/:id" element={<EntertainmentDetails />} />
         <Route path="/education/:id" element={<EDetails />} />
       </Routes>
-      <Footer />
-    </Router>
+       <Footer />
+     </>
   );
 };
 
