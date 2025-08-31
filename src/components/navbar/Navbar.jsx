@@ -56,7 +56,7 @@ const Navbar = () => {
       
       <div className={`${styles.navbarLinks} ${isOpen ? styles.open : ''}`}>
         <a href="/" className={styles.navbarLink} onClick={closeMenu}>Home</a>
-        <a href="/entertainment" className={styles.navbarLink} onClick={closeMenu}>Entertainments</a>
+        <a href="/entertainment" className={styles.navbarLink} onClick={closeMenu}>Entertainmentsss</a>
         <a href="/jobs" className={styles.navbarLink} onClick={closeMenu}>Jobs</a>
         <a href="/education" className={styles.navbarLink} onClick={closeMenu}>Education</a>
         <a href="/properties" className={styles.navbarLink} onClick={closeMenu}>Apartment</a>
