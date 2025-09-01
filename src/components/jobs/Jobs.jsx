@@ -16,7 +16,7 @@ const Jobs = () => {
       const q = query(
         collection(db, "Jobs"),
         orderBy("timestamp", "desc"),
-        limit(10),
+        limit(12),
         ...(lastVisible ? [startAfter(lastVisible)] : [])
       );
       const snapshot = await getDocs(q);

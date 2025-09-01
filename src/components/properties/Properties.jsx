@@ -21,7 +21,7 @@ const Properties = () => {
         q = query(
           collection(db, "Properties"),
           orderBy("timestamp", "desc"),
-          limit(10),
+          limit(12),
           ...(lastVisible && !isInitialLoad ? [startAfter(lastVisible)] : [])
         );
       } else {

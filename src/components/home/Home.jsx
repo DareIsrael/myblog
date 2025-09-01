@@ -17,7 +17,7 @@ const Home = () => {
       const q = query(
         collection(db, "MyBlog"),
         orderBy("timestamp", "desc"),
-        limit(10),
+        limit(12),
         ...(lastVisible ? [startAfter(lastVisible)] : [])
       );
       const snapshot = await getDocs(q);
