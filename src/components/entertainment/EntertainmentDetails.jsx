@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { db } from "../../firebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
 import styles from "./EntertainmentDetails.module.css";
 
 const EntertainmentDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [news, setNews] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -34,6 +35,11 @@ const EntertainmentDetails = () => {
     fetchNewsDetails();
   }, [id]);
 
+  const handleGoBack = () => {
+    navigate(-1); // Go back to previous page
+  };
+
+
   if (loading) {
     return <div className={styles.loading}>Loading news article...</div>;
   }
@@ -44,6 +50,10 @@ const EntertainmentDetails = () => {
 
   return (
     <div className={styles.newsDetailsPage}>
+    <button className={styles.backButton} onClick={handleGoBack}>
+        <span className={styles.backArrow}>←</span>
+        Back
+      </button>
       {news ? (
         <>
           <div className={styles.newsHeader}>
