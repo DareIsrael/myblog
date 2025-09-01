@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.aboutHeader}>
-        <h1 className={styles.aboutTitle}>About Gistplus</h1>
+        <h1 className={styles.aboutTitle}>About InfoConnect</h1>
         <p className={styles.aboutSubtitle}>
           Your comprehensive platform for news, entertainment, opportunities, and lifestyle. 
           Everything you need to stay informed and empowered in one place.
@@ -16,7 +16,7 @@ const About = () => {
         <div className={styles.heroContent}>
           <h2 className={styles.heroTitle}>Your Complete Information Hub</h2>
           <p className={styles.heroText}>
-            Gistplus is more than just a news platform - we're your one-stop destination for 
+            InfoConnect is more than just a news platform - we're your one-stop destination for 
             all aspects of modern life. From breaking news to apartment hunting, career opportunities 
             to travel tips, we bring you comprehensive coverage across all essential categories.
           </p>
@@ -26,7 +26,7 @@ const About = () => {
             of the curve in an ever-changing world.
           </p>
         </div>
-        <div className={styles.heroImage}>G+</div>
+        <div className={styles.heroImage}>IC</div>
       </div>
 
       <div className={styles.missionSection}>

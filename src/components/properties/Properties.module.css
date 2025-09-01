@@ -1,19 +1,20 @@
-.sportContainer {
+.propertiesContainer {
   padding: 1rem;
   background-color: #f9f9f9;
   min-height: 100vh;
 }
 
-.sportTitle {
+.propertiesTitle {
   font-size: 1.8rem;
   text-align: center;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
+  margin: auto;
   color: #333;
   font-weight: 700;
   padding: 0 1rem;
 }
 
-.sportGrid {
+.propertiesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
@@ -33,7 +34,7 @@
 .newsItem:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-color: #e91e63; /* Same pink color as entertainment */
+  border-color: #e91e63;
 }
 
 .newsItemImg {
@@ -75,7 +76,7 @@
   margin: 2rem auto;
   padding: 0.8rem 2rem;
   font-size: 1rem;
-  background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%); /* Same pink gradient */
+  background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -97,17 +98,17 @@
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
-  .sportContainer {
+  .propertiesContainer {
     padding: 0.8rem;
   }
   
-  .sportTitle {
+  .propertiesTitle {
     font-size: 1.5rem;
     margin-bottom: 1.2rem;
     padding: 0 0.5rem;
   }
   
-  .sportGrid {
+  .propertiesGrid {
     grid-template-columns: 1fr;
     gap: 0.8rem;
   }
@@ -145,11 +146,11 @@
 }
 
 @media (max-width: 480px) {
-  .sportContainer {
+  .propertiesContainer {
     padding: 0.5rem;
   }
   
-  .sportTitle {
+  .propertiesTitle {
     font-size: 1.3rem;
     margin-bottom: 1rem;
   }
@@ -190,7 +191,7 @@
 }
 
 @media (max-width: 320px) {
-  .sportTitle {
+  .propertiesTitle {
     font-size: 1.2rem;
   }
   
@@ -225,7 +226,7 @@
 }
 
 /* Smooth animations */
-.sportGrid {
+.propertiesGrid {
   animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -251,8 +252,8 @@
   outline-offset: 2px;
 }
 
-/* Entertainment-themed enhancements (same as entertainment) */
-.sportContainer {
+/* Entertainment-themed enhancements */
+.propertiesContainer {
   background: linear-gradient(135deg, #fce4ec 0%, #f9f9f9 100%);
 }
 
@@ -263,4 +264,123 @@
 .newsTimestamp {
   color: #888;
   font-style: italic;
+}
+
+/* Filter styles */
+.headerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filterContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.filterButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filterButton:hover {
+  background: linear-gradient(135deg, #ad1457 0%, #880e4f 100%);
+  transform: translateY(-1px);
+}
+
+.filterIcon {
+  font-size: 1.2rem;
+}
+
+.activeFilter {
+  background: white;
+  color: #e91e63;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.filterDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 150px;
+  margin-top: 0.5rem;
+}
+
+.filterOption {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.filterOption:hover {
+  background-color: #f5f5f5;
+}
+
+.filterOption.active {
+  background-color: #e91e63;
+  color: white;
+  font-weight: 600;
+}
+
+.propertyLocation {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+  font-weight: 500;
+}
+
+/* Responsive design for filter */
+@media (max-width: 768px) {
+  .headerSection {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filterContainer {
+    align-self: flex-start;
+  }
+  
+  .filterDropdown {
+    right: auto;
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .filterButton {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .filterOption {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
 }

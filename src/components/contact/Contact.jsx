@@ -39,7 +39,7 @@ const Contact = () => {
             <span className={styles.infoIcon}>📧</span>
             <div>
               <h3>Email</h3>
-              <p>contact@gistplus.com</p>
+              <p>contact@infoconnect.com</p>
             </div>
           </div>
           
