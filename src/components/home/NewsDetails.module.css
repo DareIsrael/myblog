@@ -160,7 +160,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.8rem 1.5rem;
-  background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
+  background: linear-gradient(135deg, #e91e63 0%, #ad1414 100%);
   color: white;
   border: none;
   border-radius: 25px;
@@ -168,13 +168,13 @@
   font-weight: 600;
   transition: all 0.3s ease;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+  box-shadow: 0 4px 12px rgba(233, 30, 30, 0.3);
 }
 
 .backButton:hover {
-  background: linear-gradient(135deg, #ad1457 0%, #880e4f 100%);
+  background: linear-gradient(135deg, #ad1457 0%, #880e0e 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(233, 30, 99, 0.4);
+  box-shadow: 0 6px 18px rgba(233, 30, 30, 0.4);
 }
 
 .backArrow {
