@@ -29,7 +29,7 @@ const Properties = () => {
           collection(db, "Properties"),
           where("location", "==", locationFilter),
           orderBy("timestamp", "desc"),
-          limit(10),
+          limit(12),
           ...(lastVisible && !isInitialLoad ? [startAfter(lastVisible)] : [])
         );
       }
@@ -83,7 +83,7 @@ const Properties = () => {
         q = query(
           collection(db, "Properties"),
           orderBy("timestamp", "desc"),
-          limit(10)
+          limit(12)
         );
       } else {
         q = query(

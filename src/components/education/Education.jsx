@@ -97,7 +97,7 @@ const Education = () => {
       const q = query(
         collection(db, "Education"),
         orderBy("timestamp", "desc"),
-        limit(10),
+        limit(12),
         ...(lastVisible ? [startAfter(lastVisible)] : [])
       );
       const snapshot = await getDocs(q);

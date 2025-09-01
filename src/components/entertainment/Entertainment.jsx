@@ -16,7 +16,7 @@ const Entertainment = () => {
       const q = query(
         collection(db, "Entertainment"),
         orderBy("timestamp", "desc"),
-        limit(10),
+        limit(12),
         ...(lastVisible ? [startAfter(lastVisible)] : [])
       );
       const snapshot = await getDocs(q);
