@@ -21,6 +21,12 @@ import Contact from './components/contact/Contact';
 import PrivacyPolicy from './components/privacypolicy/PrivacyPolicy';
 import About from './components/about/About';
 import PoDetails from './components/politics/PDetails';
+import AdminDashboard from './components/admin/AdminDashboard';
+import ManagePosts from './components/admin/ManagePosts';
+
+// import AdminDashboard from './components/admin/AdminDashboard';
+// import ManagePosts from './components/admin/ManagePosts';
+
 
 
 const App = () => {
@@ -46,6 +52,10 @@ const App = () => {
         <Route path="/news/:id" element={<NewsDetails />} />
         <Route path="/entertainment/:id" element={<EntertainmentDetails />} />
         <Route path="/education/:id" element={<EDetails />} />
+        {/* <Route path="/admindashboard" element={<AdminDashboard />} /> */}
+        {/* <Route path="/managepost/managepost/:collectionName" element={<ManagePosts />} /> */}
+        <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/admin/manage/:collectionName" element={<ManagePosts />} />
       </Routes>
        <Footer />
      </>
